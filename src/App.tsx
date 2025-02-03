@@ -17,12 +17,6 @@ const config = {
 }
 
 
-// const config = {
-//   SDKAppID: 1400574086, 
-//   userID: 'test1', 
-//   userSig: 'eJw9zD0PgjAUheH-0tnQW6CUkDgog5LoJEaHLkgv5gY-CFQDGP*7CMbxPG9yXizd7Jwn1ixirgNsNm4yeLNU0MgWGyt*oTFlVlVkWCR8AKl8CIOpYFtRjYNLKV0AmNTS9WvKC33w-trQefjVfN0mmivs8NDHabLcx5qnpbgUD9WtTiI7BlZuk-7eaW7yxZy9P9nhMno_', 
-// }
-
 // TUILogin.login({
 //   ...config,
 //   useUploadPlugin: true
