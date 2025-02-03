@@ -11,10 +11,17 @@ import {
 } from '@tencentcloud/chat-uikit-engine';
 
 const config = {
-  SDKAppID: Number(process.env.SDK_APP_ID), 
-  userID: String(process.env.USER_ID), 
-  userSig: String(process.env.USER_SIG), 
+  SDKAppID: Number(process.env.REACT_APP_SDK_APP_ID), 
+  userID: String(process.env.REACT_APP_USER_ID), 
+  userSig: String(process.env.REACT_APP_USER_SIG), 
 }
+
+
+// const config = {
+//   SDKAppID: 1400574086, 
+//   userID: 'test1', 
+//   userSig: 'eJw9zD0PgjAUheH-0tnQW6CUkDgog5LoJEaHLkgv5gY-CFQDGP*7CMbxPG9yXizd7Jwn1ixirgNsNm4yeLNU0MgWGyt*oTFlVlVkWCR8AKl8CIOpYFtRjYNLKV0AmNTS9WvKC33w-trQefjVfN0mmivs8NDHabLcx5qnpbgUD9WtTiI7BlZuk-7eaW7yxZy9P9nhMno_', 
+// }
 
 // TUILogin.login({
 //   ...config,
@@ -22,7 +29,6 @@ const config = {
 // }).then(() => {
 //   openChat();
 // }).catch(() => { });
-
 TUILogin.login({
   ...config,
   useUploadPlugin: true
@@ -30,13 +36,13 @@ TUILogin.login({
 .then(() => {})
 .catch(() => {});
 
-function openChat() {
-  // 1v1 chat: conversationID = 
-  // group chat: conversationID = `GROUP${groupID}`
-  const userID = 'test2'; // userID: 消息接收方的 userID
-  const conversationID = `C2C${userID}`;
-  TUIConversationService.switchConversation(conversationID);
-}
+// function openChat() {
+//   // 1v1 chat: conversationID = 
+//   // group chat: conversationID = `GROUP${groupID}`
+//   const userID = 'test2'; // userID: 消息接收方的 userID
+//   const conversationID = `C2C${userID}`;
+//   TUIConversationService.switchConversation(conversationID);
+// }
 
 export default function App() {
   // language support en-US(default) / zh-CN / ja-JP / ko-KR / zh-TW
