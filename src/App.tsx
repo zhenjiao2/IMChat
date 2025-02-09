@@ -1,14 +1,8 @@
 import React from 'react';
 import { TUILogin } from '@tencentcloud/tui-core';
 import { Chat, ConversationList, ChatSetting } from '@tencentcloud/chat-uikit-react';
-import { TUIConversationService } from '@tencentcloud/chat-uikit-engine';
 import { UIKitProvider } from '@tencentcloud/uikit-base-component-react';
 import '@tencentcloud/chat-uikit-react/dist/esm/index.css';
-import {
-  TUIStore,
-  StoreName,
-  IMessageModel,
-} from '@tencentcloud/chat-uikit-engine';
 
 const config = {
   SDKAppID: Number(process.env.REACT_APP_SDK_APP_ID), 
