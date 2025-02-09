@@ -21,14 +21,13 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-{
   "scripts": {
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
-  }
-}  "eslintConfig": {
+  },
+  "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
